@@ -1,6 +1,5 @@
 import styles from "./Skills.module.css";
 import SkillCard from "./SkillCard";
-import Icons from "../../contants/icons";
 import { skillCategories } from "../../utils/mySkills";
 
 const Skills = () => {
