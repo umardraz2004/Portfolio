@@ -78,4 +78,7 @@
   .achievementGrid {
     grid-template-columns: repeat(minmax(150px, 1fr));
   }
+  .infoLabel {
+    min-width: 110px;
+  }
 } 
