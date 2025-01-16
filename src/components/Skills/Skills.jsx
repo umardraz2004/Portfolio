@@ -5,7 +5,7 @@ import { skillCategories } from "../../utils/mySkills";
 const Skills = () => {
 
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="pb-20">
       <h2 className="text-3xl font-bold text-center text-[#2c3e50] mb-12 font-poppins">
         My Skills
       </h2>

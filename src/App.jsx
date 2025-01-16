@@ -7,7 +7,7 @@ import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
-    <div className="font-poppins">
+    <div className="font-poppins bg-gray-100">
       <Navigation />
       <Hero />
       <About />
