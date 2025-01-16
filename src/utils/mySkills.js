@@ -1,4 +1,4 @@
-import Icons from "../constants/icons";
+import Icons from "../constants/Icons";
 export const skillCategories = [
   {
     title: "Frontend Development",
