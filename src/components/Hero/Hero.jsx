@@ -20,24 +20,24 @@ const Hero = () => {
             </span>
           </h1>
           <div
-            className={`${styles.typeText} flex justify-center text-2xl md:text-3xl text-[#8892b0] mb-8 min-h-[2.5rem]`}
+            className={`${styles.typeText} flex justify-center items-center text-xl sm:text-2xl md:text-3xl text-[#8892b0] mb-6 min-h-[2.5rem]`}
           >
-            <div className="font-poppins">I'm a </div>
-            <div className="ms-3 flex items-center">
+            <div className="font-poppins">I'm a</div>
+            <div className="ms-1">
               <TypeEffect
                 texts={[
                   "Full Stack Developer",
                   "Web Developer",
-                  "Mobile Application Developer",
+                  "Mobile App Developer",
                 ]}
                 speed={150}
                 pause={3000}
-                className="text-2xl text-primary font-poppins text-center translate-y-[-500%] sm:translate-y-[-0%] sm:text-2xl md:text-left"
+                className="font-semibold font-poppins text-center text-xl sm:text-2xl md:text-3xl text-[#8892b0] md:text-left"
               />
             </div>
           </div>
           <p
-            className={`${styles.description} text-[#8892b0] text-lg mb-10 font-poppins`}
+            className={`text-[#8892b0] text-lg mb-10 font-poppins`}
           >
             Passionate about creating beautiful web experiences and turning
             ideas into reality through code.
