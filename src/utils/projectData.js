@@ -1,5 +1,5 @@
 import Images from "../contants/Images";
-const projectData = [
+export const projectData = [
   {
     image: Images.HomeScreen,
     title: "Guess the number game",
@@ -34,5 +34,3 @@ const projectData = [
     githubLink: "https://github.com/umardraz2004/terescrow-frontend",
   },
 ];
-
-export default projectData;

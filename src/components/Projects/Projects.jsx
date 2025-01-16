@@ -1,6 +1,6 @@
 import styles from "./Projects.module.css";
 import ProjectCard from "./ProjectCard";
-import projectData from "../../utils/projectData";
+import {projectData} from "../../utils/projectData";
 
 export default function Projects() {
   return (
