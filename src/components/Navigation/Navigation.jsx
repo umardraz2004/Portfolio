@@ -1,4 +1,5 @@
 import styles from "./Navigation.module.css";
+import cv from "../../assets/Umar_Draz_Cv.pdf"
 
 export default function Navigation() {
   return (
@@ -34,7 +35,11 @@ export default function Navigation() {
         </li>
       </ul>
       <div>
-        <a href="#" className={`font-poppins ${styles.downloadBtn}`}>
+        <a
+          href={cv}
+          download="Umar_Draz_Cv.pdf"
+          className={`font-poppins ${styles.downloadBtn}`}
+        >
           Download CV
         </a>
       </div>
