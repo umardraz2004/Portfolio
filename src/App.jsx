@@ -15,7 +15,7 @@ function App() {
       <Projects />
       <Contact />
       <footer className="text-center py-8 bg-[#2c3e50] text-white">
-        <p>&copy; 2024 Muhammad Umar Draz . All rights reserved.</p>
+        <p>&copy; 2025 Muhammad Umar Draz . All rights reserved.</p>
       </footer>
     </div>
   );
