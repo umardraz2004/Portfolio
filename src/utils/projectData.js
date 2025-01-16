@@ -1,4 +1,4 @@
-import Images from "../contants/Images";
+import Images from "../constants/Images";
 export const projectData = [
   {
     image: Images.HomeScreen,
