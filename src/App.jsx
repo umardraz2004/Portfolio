@@ -12,7 +12,7 @@ function App() {
       <Hero />
       <About />
       <Skills />
-      <Projects />
+      <Projects />  
       <Contact />
       <footer className="text-center py-8 bg-[#2c3e50] text-white">
         <p>&copy; 2024 Your Name. All rights reserved.</p>

@@ -22,7 +22,7 @@ export const projectData = [
     title: "React App",
     description:
       "This web app is a React.js-based dashboard for a payment platform. It features a clean and interactive interface that allows users to manage transactions, view payment history, and track account activity. Built with React and JavaScript, the dashboard provides real-time updates, intuitive navigation, and a responsive design for a seamless user experience.",
-    demoLink: "https://umardraz2004.github.io/Demo_Not_Available/",
+    demoLink: "https://umardraz1115.github.io/Demo-not-available/",
     githubLink: "https://github.com/umardraz2004/React-App",
   },
   {
@@ -30,7 +30,7 @@ export const projectData = [
     title: "React Native App",
     description:
       "Client Payment App (React Native, Typescript) A seamless payment app built with React Native, offering secure transactions, easy payment management, and smooth user experience on both Android and iOS platforms.",
-    demoLink: "https://umardraz2004.github.io/Demo_Not_Available/",
+    demoLink: "https://umardraz1115.github.io/Demo-not-available/",
     githubLink: "https://github.com/umardraz2004/terescrow-frontend",
   },
 ];

@@ -72,9 +72,11 @@ const Hero = () => {
             className={`${styles.typeText} text-2xl md:text-3xl text-[#8892b0] mb-8 min-h-[2.5rem]`}
           >
             <span className="font-poppins">I'm a </span>
-            <span ref={dynamicTextRef} className="font-poppins" ></span>
+            <span ref={dynamicTextRef} className="font-poppins"></span>
           </div>
-          <p className={`${styles.description} text-[#8892b0] text-lg mb-10 font-poppins`}>
+          <p
+            className={`${styles.description} text-[#8892b0] text-lg mb-10 font-poppins`}
+          >
             Passionate about creating beautiful web experiences and turning
             ideas into reality through code.
           </p>
@@ -82,22 +84,25 @@ const Hero = () => {
             <a href="#projects" className={`font-poppins ${styles.primaryBtn}`}>
               View Work
             </a>
-            <a href="#contact" className={`font-poppins ${styles.secondaryBtn}`}>
+            <a
+              href="#contact"
+              className={`font-poppins ${styles.secondaryBtn}`}
+            >
               Contact Me
             </a>
           </div>
         </div>
         <div className="flex justify-center gap-8 mt-8">
-          <a href="#" title="GitHub" className={styles.socialLink}>
+          <a href="https://github.com/UmarDraz2004" target="_blank" title="GitHub" className={styles.socialLink}>
             <FaGithub />
           </a>
-          <a href="#" title="LinkedIn" className={styles.socialLink}>
+          <a href="https://www.linkedin.com/in/muhammad-umar-draz/" target="_blank" title="LinkedIn" className={styles.socialLink}>
             <FaLinkedin />
           </a>
-          <a href="#" title="Twitter" className={styles.socialLink}>
+          <a href="https://umardraz1115.github.io/Not-Found-Page/" target="_blank" title="Twitter" className={styles.socialLink}>
             <FaTwitter />
           </a>
-          <a href="#" title="Instagram" className={styles.socialLink}>
+          <a href="https://www.instagram.com/excuse_me_umar/" target="_blank" title="Instagram" className={styles.socialLink}>
             <FaInstagram />
           </a>
         </div>
