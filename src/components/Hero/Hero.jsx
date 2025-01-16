@@ -1,57 +1,8 @@
-import { useEffect, useRef } from "react";
 import styles from "./Hero.module.css";
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-
-const roles = [
-  "Full Stack Developer",
-  "Web developer",
-  "Mobile Application Developer",
-];
+import TypeEffect from "../TypeEffect";
 
 const Hero = () => {
-  const dynamicTextRef = useRef(null);
-
-  useEffect(() => {
-    let currentRoleIndex = 0;
-    let currentCharIndex = 0;
-    let isDeleting = false;
-
-    function typeEffect() {
-      const currentRole = roles[currentRoleIndex];
-
-      if (isDeleting) {
-        dynamicTextRef.current.textContent = currentRole.substring(
-          0,
-          currentCharIndex - 1
-        );
-        currentCharIndex--;
-      } else {
-        dynamicTextRef.current.textContent = currentRole.substring(
-          0,
-          currentCharIndex + 1
-        );
-        currentCharIndex++;
-      }
-
-      if (!isDeleting && currentCharIndex === currentRole.length) {
-        isDeleting = true;
-        setTimeout(typeEffect, 2000);
-        return;
-      }
-
-      if (isDeleting && currentCharIndex === 0) {
-        isDeleting = false;
-        currentRoleIndex = (currentRoleIndex + 1) % roles.length;
-        setTimeout(typeEffect, 200);
-        return;
-      }
-
-      setTimeout(typeEffect, isDeleting ? 100 : 200);
-    }
-
-    typeEffect();
-  }, []);
-
   return (
     <section id="home" className={styles.hero}>
       <div className={styles.heroBgAnimation}></div>
@@ -69,10 +20,21 @@ const Hero = () => {
             </span>
           </h1>
           <div
-            className={`${styles.typeText} text-2xl md:text-3xl text-[#8892b0] mb-8 min-h-[2.5rem]`}
+            className={`${styles.typeText} flex justify-center text-2xl md:text-3xl text-[#8892b0] mb-8 min-h-[2.5rem]`}
           >
-            <span className="font-poppins">I'm a </span>
-            <span ref={dynamicTextRef} className="font-poppins"></span>
+            <div className="font-poppins">I'm a </div>
+            <div className="ms-3 flex items-center">
+              <TypeEffect
+                texts={[
+                  "Full Stack Developer",
+                  "Web Developer",
+                  "Mobile Application Developer",
+                ]}
+                speed={150}
+                pause={3000}
+                className="text-2xl text-primary font-poppins text-center translate-y-[-500%] sm:translate-y-[-0%] sm:text-2xl md:text-left"
+              />
+            </div>
           </div>
           <p
             className={`${styles.description} text-[#8892b0] text-lg mb-10 font-poppins`}
@@ -93,16 +55,36 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex justify-center gap-8 mt-8">
-          <a href="https://github.com/UmarDraz2004" target="_blank" title="GitHub" className={styles.socialLink}>
+          <a
+            href="https://github.com/UmarDraz2004"
+            target="_blank"
+            title="GitHub"
+            className={styles.socialLink}
+          >
             <FaGithub />
           </a>
-          <a href="https://www.linkedin.com/in/muhammad-umar-draz/" target="_blank" title="LinkedIn" className={styles.socialLink}>
+          <a
+            href="https://www.linkedin.com/in/muhammad-umar-draz/"
+            target="_blank"
+            title="LinkedIn"
+            className={styles.socialLink}
+          >
             <FaLinkedin />
           </a>
-          <a href="https://umardraz1115.github.io/Not-Found-Page/" target="_blank" title="Twitter" className={styles.socialLink}>
+          <a
+            href="https://umardraz1115.github.io/Not-Found-Page/"
+            target="_blank"
+            title="Twitter"
+            className={styles.socialLink}
+          >
             <FaTwitter />
           </a>
-          <a href="https://www.instagram.com/excuse_me_umar/" target="_blank" title="Instagram" className={styles.socialLink}>
+          <a
+            href="https://www.instagram.com/excuse_me_umar/"
+            target="_blank"
+            title="Instagram"
+            className={styles.socialLink}
+          >
             <FaInstagram />
           </a>
         </div>
