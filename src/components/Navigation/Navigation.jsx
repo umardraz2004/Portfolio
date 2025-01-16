@@ -1,5 +1,5 @@
 import styles from "./Navigation.module.css";
-import cv from "../../assets/Umar_Draz_Cv.pdf"
+import cv from "../../assets/Umar_Draz_Cv.pdf";
 
 export default function Navigation() {
   return (
